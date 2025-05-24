@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a la Landing Page</h1>
+        <p>Proyecto simple con login funcional.</p>
+        <a href="{{ url_for('login') }}" class="btn">Iniciar Sesión</a>
+    </div>
+</body>
+</html>
