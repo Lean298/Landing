@@ -4,9 +4,8 @@ import mysql.connector
 import os
 
 app = Flask(__name__)
-app.secret_key = 'clave_secreta_segura'  # Cambia esto por seguridad
+app.secret_key = 'clave_secreta_segura' 
 
-# Configura tu conexión usando los datos de Clever Cloud
 db = mysql.connector.connect(
     host=os.environ.get("DB_HOST"),
     user=os.environ.get("DB_USER"),
